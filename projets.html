@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets - Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>TONTOROGOBO <span class="prenom">MOHASE</span></h1>
+            </div>
+            
+            <!-- Bouton Hamburger -->
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Mon Portfolio de Projets</h2>
+                
+                <!-- Filtres par catégorie -->
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">Tous les projets</button>
+                    <button class="filter-btn" data-category="webdev">💻 Web Dev</button>
+                    <button class="filter-btn" data-category="graphicdesign">🎨 Graphic Design</button>
+                    <button class="filter-btn" data-category="videoediting">🎬 Video Editing</button>
+                    <button class="filter-btn" data-category="dataai">📊 Data & AI</button>
+                    <button class="filter-btn" data-category="marketing">📱 Marketing Digital</button>
+                </div>
+
+                <!-- Compteur de projets -->
+                <div class="project-count">
+                    <p>Total : <span id="projectCount">50</span> projets</p>
+                </div>
+
+                <!-- CATÉGORIE 1 : WEB DEVELOPMENT -->
+                <div class="project-category" data-category="webdev">
+                    <h3 class="category-header">💻 Développement Web</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/webdev/projet1.jpg" alt="Site E-commerce">
+                            </div>
+                            <div class="project-info">
+                                <h4>Site E-commerce Responsive</h4>
+                                <p>Boutique en ligne complète avec panier, système de paiement et gestion des produits</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <a href="#" class="view-project">Voir le projet →</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/webdev/projet2.jpg" alt="Portfolio">
+                            </div>
+                            <div class="project-info">
+                                <h4>Portfolio Personnel Interactif</h4>
+                                <p>Site portfolio moderne avec animations et effets parallax</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <a href="#" class="view-project">Voir le projet →</a>
+                            </div>
+                        </div>
+
+                        <!-- Ajoutez 8 autres projets web dev ici -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/webdev/projet3.jpg" alt="Landing Page">
+                            </div>
+                            <div class="project-info">
+                                <h4>Landing Page Marketing</h4>
+                                <p>Page de destination optimisée pour conversions</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                </div>
+                                <a href="#" class="view-project">Voir le projet →</a>
+                            </div>
+                        </div>
+
+                        <!-- Continuez jusqu'à 10 projets -->
+                    </div>
+                </div>
+
+                <!-- CATÉGORIE 2 : GRAPHIC DESIGN -->
+                <div class="project-category" data-category="graphicdesign">
+                    <h3 class="category-header">🎨 Design Graphique</h3>
+                    
+                    <!-- SOUS-CATÉGORIE : Photoshop -->
+                    <div class="subcategory">
+                        <h4 class="subcategory-title">
+                            <span class="subcategory-icon">🖼️</span>
+                            Projets Adobe Photoshop
+                            <span class="project-badge">10 projets</span>
+                        </h4>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="images/photoshop/projet1.jpg" alt="Affiche Concert">
+                                </div>
+                                <div class="project-info">
+                                    <h4>Affiche de Concert</h4>
+                                    <p>Design d'affiche événementielle avec effets de lumière et typographie créative</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Photoshop</span>
+                                        <span class="tech-tag">Retouche Photo</span>
+                                    </div>
+                                    <a href="#" class="view-project">Voir le projet →</a>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="images/photoshop/projet2.jpg" alt="Manipulation Photo">
+                                </div>
+                                <div class="project-info">
+                                    <h4>Manipulation Photo Créative</h4>
+                                    <p>Composition surréaliste avec multiples éléments</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Photoshop</span>
+                                        <span class="tech-tag">Compositing</span>
+                                    </div>
+                                    <a href="#" class="view-project">Voir le projet →</a>
+                                </div>
+                            </div>
+
+                            <!-- Ajoutez 8 autres projets Photoshop -->
+                        </div>
+                    </div>
+
+                    <!-- SOUS-CATÉGORIE : Illustrator -->
+                    <div class="subcategory">
+                        <h4 class="subcategory-title">
+                            <span class="subcategory-icon">✏️</span>
+                            Projets Adobe Illustrator
+                            <span class="project-badge">10 projets</span>
+                        </h4>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="images/illustrator/projet1.jpg" alt="Logo">
+                                </div>
+                                <div class="project-info">
+                                    <h4>Logo Entreprise Tech</h4>
+                                    <p>Création d'identité visuelle complète pour startup</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Illustrator</span>
+                                        <span class="tech-tag">Logo Design</span>
+                                    </div>
+                                    <a href="#" class="view-project">Voir le projet →</a>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="images/illustrator/projet2.jpg" alt="Icônes">
+                                </div>
+                                <div class="project-info">
+                                    <h4>Pack d'Icônes Vectorielles</h4>
+                                    <p>Set de 50 icônes pour application mobile</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Illustrator</span>
+                                        <span class="tech-tag">Icon Design</span>
+                                    </div>
+                                    <a href="#" class="view-project">Voir le projet →</a>
+                                </div>
+                            </div>
+
+                            <!-- Ajoutez 8 autres projets Illustrator -->
+                        </div>
+                    </div>
+
+                    <!-- SOUS-CATÉGORIE : Canva -->
+                    <div class="subcategory">
+                        <h4 class="subcategory-title">
+                            <span class="subcategory-icon">🎨</span>
+                            Projets Canva
+                            <span class="project-badge">10 projets</span>
+                        </h4>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="images/canva/projet1.jpg" alt="Post Instagram">
+                                </div>
+                                <div class="project-info">
+                                    <h4>Campagne Instagram (10 posts)</h4>
+                                    <p>Série cohérente de posts pour marque de mode</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Canva</span>
+                                        <span class="tech-tag">Social Media</span>
+                                    </div>
+                                    <a href="#" class="view-project">Voir le projet →</a>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="images/canva/projet2.jpg" alt="Présentation">
+                                </div>
+                                <div class="project-info">
+                                    <h4>Présentation Pitch Deck</h4>
+                                    <p>Deck de présentation pour startup (20 slides)</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Canva</span>
+                                        <span class="tech-tag">Presentation</span>
+                                    </div>
+                                    <a href="#" class="view-project">Voir le projet →</a>
+                                </div>
+                            </div>
+
+                            <!-- Ajoutez 8 autres projets Canva -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATÉGORIE 3 : VIDEO EDITING -->
+                <div class="project-category" data-category="videoediting">
+                    <h3 class="category-header">🎬 Montage Vidéo</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/video/projet1.jpg" alt="Vidéo Promo">
+                                <span class="video-badge">▶️ 2:30</span>
+                            </div>
+                            <div class="project-info">
+                                <h4>Vidéo Promotionnelle Entreprise</h4>
+                                <p>Montage dynamique avec motion graphics et voix-off</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Premiere Pro</span>
+                                    <span class="tech-tag">After Effects</span>
+                                </div>
+                                <a href="#" class="view-project">Voir le projet →</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/video/projet2.jpg" alt="Tutoriel">
+                                <span class="video-badge">▶️ 5:45</span>
+                            </div>
+                            <div class="project-info">
+                                <h4>Tutoriel YouTube Animé</h4>
+                                <p>Vidéo éducative avec animations et sous-titres</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Premiere Pro</span>
+                                    <span class="tech-tag">Motion Graphics</span>
+                                </div>
+                                <a href="#" class="view-project">Voir le projet →</a>
+                            </div>
+                        </div>
+
+                        <!-- Ajoutez 8 autres projets vidéo -->
+                    </div>
+                </div>
+
+                <!-- CATÉGORIE 4 : DATA & AI -->
+                <div class="project-category" data-category="dataai">
+                    <h3 class="category-header">📊 Data & Intelligence Artificielle</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/data/projet1.jpg" alt="Dashboard">
+                            </div>
+                            <div class="project-info">
+                                <h4>Dashboard Analytique Ventes</h4>
+                                <p>Tableau de bord interactif avec visualisations de données</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Pandas</span>
+                                    <span class="tech-tag">Plotly</span>
+                                </div>
+                                <a href="#" class="view-project">Voir le projet →</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/data/projet2.jpg" alt="ML Model">
+                            </div>
+                            <div class="project-info">
+                                <h4>Modèle de Prédiction de Prix</h4>
+                                <p>Machine learning pour prédire les prix immobiliers</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Scikit-learn</span>
+                                </div>
+                                <a href="#" class="view-project">Voir le projet →</a>
+                            </div>
+                        </div>
+
+                        <!-- Ajoutez 8 autres projets data -->
+                    </div>
+                </div>
+
+                <!-- CATÉGORIE 5 : MARKETING DIGITAL -->
+                <div class="project-category" data-category="marketing">
+                    <h3 class="category-header">📱 Marketing Digital</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/marketing/projet1.jpg" alt="Campagne Facebook">
+                            </div>
+                            <div class="project-info">
+                                <h4>Campagne Facebook Ads</h4>
+                                <p>Campagne publicitaire ayant généré 15k leads</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Facebook Ads</span>
+                                    <span class="tech-tag">Analytics</span>
+                                </div>
+                                <a href="#" class="view-project">Voir le projet →</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/marketing/projet2.jpg" alt="Stratégie Social Media">
+                            </div>
+                            <div class="project-info">
+                                <h4>Stratégie Social Media 360°</h4>
+                                <p>Plan de contenu multi-plateformes sur 3 mois</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Instagram</span>
+                                    <span class="tech-tag">LinkedIn</span>
+                                    <span class="tech-tag">TikTok</span>
+                                </div>
+                                <a href="#" class="view-project">Voir le projet →</a>
+                            </div>
+                        </div>
+
+                        <!-- Ajoutez 8 autres projets marketing -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; MOHASE TONTOROGOBO. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

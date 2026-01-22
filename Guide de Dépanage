@@ -1,0 +1,205 @@
+# 🔧 Guide de Dépannage - Portfolio
+
+## Problèmes Courants et Solutions
+
+### 1. Les images ne s'affichent pas 🖼️
+
+**Problème** : Les images apparaissent comme des icônes cassées
+
+**Solutions** :
+- Vérifiez que le dossier `images/` existe au même niveau que vos fichiers HTML
+- Vérifiez l'orthographe exacte du nom des images
+- Vérifiez les extensions (.jpg, .png, .svg)
+- Exemple correct : `<img src="images/profile.jpg" alt="Photo">`
+
+**Astuce** : Les noms de fichiers sont sensibles à la casse (Profile.jpg ≠ profile.jpg)
+
+---
+
+### 2. Le CSS ne s'applique pas 🎨
+
+**Problème** : La page reste blanche sans style
+
+**Solutions** :
+- Vérifiez que `style.css` est dans le même dossier que vos fichiers HTML
+- Vérifiez le lien dans le `<head>` : `<link rel="stylesheet" href="style.css">`
+- Videz le cache du navigateur : Ctrl+F5 (Windows) ou Cmd+Shift+R (Mac)
+- Ouvrez la console (F12) pour voir les erreurs
+
+---
+
+### 3. Le JavaScript ne fonctionne pas ⚙️
+
+**Problème** : Le formulaire ne valide pas, les animations ne marchent pas
+
+**Solutions** :
+- Vérifiez que `script.js` est bien lié : `<script src="script.js"></script>`
+- Placez la balise `<script>` **avant** la fermeture de `</body>`
+- Ouvrez la console (F12) et regardez les erreurs en rouge
+- Vérifiez les ID des éléments (nom, email, sujet, message)
+
+**Test rapide** : Ajoutez `console.log("Script chargé");` au début de script.js
+
+---
+
+### 4. La navigation ne fonctionne pas 🔗
+
+**Problème** : Les liens renvoient une erreur 404
+
+**Solutions** :
+- Vérifiez l'orthographe exacte des noms de fichiers
+- Les liens doivent correspondre exactement aux noms de fichiers
+- Exemple : `<a href="apropos.html">` pour le fichier `apropos.html`
+- Attention aux espaces et caractères spéciaux
+
+---
+
+### 5. Le site n'est pas responsive 📱
+
+**Problème** : Le site est cassé sur mobile
+
+**Solutions** :
+- Vérifiez la balise viewport dans le `<head>` :
+  ```html
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  ```
+- Testez avec les outils développeur (F12 > Toggle device toolbar)
+- Vérifiez les media queries dans le CSS
+
+---
+
+### 6. Les barres de compétences ne s'animent pas 📊
+
+**Problème** : Les barres restent vides
+
+**Solutions** :
+- Assurez-vous d'être sur la page `competences.html`
+- Vérifiez que l'attribut `data-progress` est présent :
+  ```html
+  <div class="skill-progress" data-progress="85"></div>
+  ```
+- Vérifiez que le JavaScript est bien chargé
+- Scrollez vers le bas pour déclencher l'animation
+
+---
+
+### 7. Le formulaire ne se réinitialise pas 📝
+
+**Problème** : Les champs restent remplis après l'envoi
+
+**Solutions** :
+- Vérifiez que l'ID du formulaire est `contactForm`
+- Vérifiez que le JavaScript contient `contactForm.reset();`
+- Assurez-vous que le code est dans l'événement submit
+
+---
+
+### 8. Erreur "Cannot read property" dans la console ❌
+
+**Problème** : Message d'erreur JavaScript
+
+**Solutions** :
+- Vérifiez que tous les ID existent dans le HTML
+- Exemple : `getElementById('nom')` nécessite un élément avec `id="nom"`
+- Vérifiez l'orthographe exacte des ID
+
+---
+
+### 9. Les couleurs ne correspondent pas au wireframe 🎨
+
+**Problème** : Votre site a des couleurs différentes
+
+**Solutions** :
+- Couleur principale cyan : `#00D9C0`
+- Fond sombre : `#1A1A1A`
+- Rechercher et remplacer dans le CSS si nécessaire
+- Utilisez un color picker pour vérifier
+
+---
+
+### 10. Problèmes de publication sur GitHub Pages 🌐
+
+**Problème** : Le site ne s'affiche pas en ligne
+
+**Solutions** :
+- Attendez 2-3 minutes après la publication
+- Vérifiez que le fichier principal s'appelle `index.html` (pas Index.html)
+- Vérifiez les paramètres dans Settings > Pages
+- L'URL doit être : `https://votre-username.github.io/nom-du-repo`
+
+---
+
+## 🔍 Comment Déboguer
+
+### Méthode en 5 étapes :
+
+1. **Ouvrir la Console** (F12)
+   - Onglet "Console" pour les erreurs JavaScript
+   - Onglet "Network" pour les fichiers manquants
+
+2. **Lire les Messages d'Erreur**
+   - Les erreurs en rouge indiquent le problème
+   - Notez le numéro de ligne
+
+3. **Vérifier le Code**
+   - Allez à la ligne indiquée
+   - Vérifiez l'orthographe, la syntaxe
+
+4. **Tester une Modification**
+   - Corrigez le problème
+   - Sauvegardez
+   - Rechargez avec Ctrl+F5
+
+5. **Valider la Solution**
+   - Vérifiez que l'erreur a disparu
+   - Testez la fonctionnalité
+
+---
+
+## 💻 Commandes Utiles
+
+### Raccourcis Navigateur
+- **F12** : Ouvrir les outils développeur
+- **Ctrl+F5** : Recharger sans cache
+- **Ctrl+Shift+I** : Inspecteur d'éléments
+- **Ctrl+Shift+C** : Sélecteur d'élément
+
+### Vérification Rapide
+```javascript
+// Ajouter dans script.js pour tester
+console.log("JavaScript fonctionne!");
+console.log(document.getElementById('nom')); // Doit afficher l'élément
+```
+
+---
+
+## 📚 Ressources Utiles
+
+- **MDN Web Docs** : https://developer.mozilla.org
+- **W3Schools** : https://www.w3schools.com
+- **Can I Use** : https://caniuse.com (compatibilité navigateurs)
+- **CSS Validator** : https://jigsaw.w3.org/css-validator/
+- **HTML Validator** : https://validator.w3.org/
+
+---
+
+## ❓ Questions Fréquentes
+
+**Q : Puis-je utiliser des frameworks comme Bootstrap ?**
+R : Oui, mais ce n'est pas nécessaire pour ce projet. Le CSS personnalisé suffit.
+
+**Q : Combien d'images dois-je avoir ?**
+R : Minimum : 1 illustration hero + 1 photo profil + 4 projets = 6 images
+
+**Q : Dois-je avoir un vrai serveur pour le formulaire ?**
+R : Non, la validation JavaScript suffit pour ce projet. Le formulaire ne sera pas fonctionnel en production sans backend.
+
+**Q : Puis-je modifier le design du wireframe ?**
+R : Oui, mais gardez la structure de base. La créativité est encouragée !
+
+**Q : Le site doit-il fonctionner sans JavaScript ?**
+R : Le contenu doit être visible, mais les interactions peuvent nécessiter JavaScript.
+
+---
+
+**Si votre problème persiste, n'hésitez pas à consulter le forum de discussion du module !**

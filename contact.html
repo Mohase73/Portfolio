@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>TONTOROGOBO  <span class="prenom">MOHASE</span></h1>
+            </div>
+            
+            <!-- Bouton Hamburger -->
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contactez-moi</h2>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Informations de contact</h3>
+                        <div class="info-item">
+                            <span class="icon">📧</span>
+                            <p>mohasetontorogobo017@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📱</span>
+                            <p>+226 74 28 82 24</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📍</span>
+                            <p>Ouagadougou, Burkina Faso</p>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h4>Retrouvez-moi sur :</h4>
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">GitHub</a>
+                            <a href="#" class="social-link">Twitter</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h3>Envoyez-moi un message</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="nom">Nom complet *</label>
+                                <input type="text" id="nom" name="nom" required>
+                                <span class="error-message" id="nomError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sujet">Sujet *</label>
+                                <input type="text" id="sujet" name="sujet" required>
+                                <span class="error-message" id="sujetError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+
+                            <button type="submit" class="submit-button">Envoyer le message</button>
+                        </form>
+                        <div id="successMessage" class="success-message" style="display: none;">
+                            ✓ Message envoyé avec succès !
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; MOHASE TONTOROGOBO. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
